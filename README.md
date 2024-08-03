@@ -5,8 +5,8 @@
 
    ![Install ROS noetic ](https://github.com/user-attachments/assets/6bfa77b7-aa35-46dc-9183-0cd09a5a0a22)
 
-1. تنزيل VirtualBox: من (https://www.virtualbox.org/).
-2. تنزيل Ubuntu ISO: من (https://ubuntu.com/download/desktop).
+1. تنزيل VirtualBox: (https://www.virtualbox.org/).
+2. تنزيل Ubuntu ISO: (https://ubuntu.com/download/desktop).
 
 2. إعداد الجهاز الوهمي في VirtualBox
 1. إنشاء جهاز وهمي جديد:
