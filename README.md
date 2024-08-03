@@ -1,54 +1,52 @@
-خطوات تثبيت ROS على نظام Ubuntu:
 
-1. إعداد VirtualBox وUbuntu
+Here's a concise guide to install ROS on Ubuntu using VirtualBox:
 
+1. Install VirtualBox: [official website](https://www.virtualbox.org/).
 
-   ![Install ROS noetic ](https://github.com/user-attachments/assets/6bfa77b7-aa35-46dc-9183-0cd09a5a0a22)
+2. Download Ubuntu ISO: file from the [Ubuntu website](https://ubuntu.com/download/desktop).
 
-1. تنزيل VirtualBox: (https://www.virtualbox.org/).
-2. تنزيل Ubuntu ISO: (https://ubuntu.com/download/desktop).
+3. Create a New Virtual Machine:
+- Open VirtualBox and click "New".
+- Name the VM, select "Linux" as the type and "Ubuntu (64-bit)" as the version.
+- Allocate memory (at least 2GB).
+- Create a virtual hard disk (at least 20GB).
 
-2. إعداد الجهاز الوهمي في VirtualBox
-1. إنشاء جهاز وهمي جديد:
-   - افتح VirtualBox وانقر على "New".
-   - اختر اسمًا للجهاز، نوع النظام "Linux"، والإصدار "Ubuntu (64-bit)".
-2. تخصيص الذاكرة: حدد 4 جيجابايت على الأقل.
-3. إنشاء قرص صلب وهمي: اختر "Create a virtual hard disk now"، نوع VDI، تخزين "Dynamically allocated"، حجم 25 جيجابايت على الأقل.
-4. إضافة صورة Ubuntu ISO: في إعدادات الجهاز الوهمي، انتقل إلى "Storage" وأضف ملف ISO.
+4. Install Ubuntu:
+- Start the VM and select the Ubuntu ISO as the startup disk.
+- Follow the installation prompts to install Ubuntu on the virtual machine.
 
-3. تثبيت Ubuntu
-1. بدء الجهاز الوهمي: انقر على "Start" واختر تثبيت Ubuntu.
-2. تثبيت Ubuntu: اتبع التعليمات على الشاشة لتثبيت النظام.
-
-4. تثبيت ROS على Ubuntu
-1. إعداد مصادر ROS:
+5. Setup ROS Sources:
    bash
-   sudo apt update
-   sudo apt install curl
-   curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+    
+
+6. Add ROS Keys:
+   bash
+   sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
    
-2. تثبيت ROS:
+
+7. Update Package Index:
    bash
    sudo apt update
+   
+
+8. Install ROS:
+   bash
    sudo apt install ros-noetic-desktop-full
    
-3. تهيئة ROS:
-   bash
-   echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-   source ~/.bashrc
-   sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
-   sudo apt install python3-rosdep
-   sudo rosdep init
-   rosdep update
-   
 
-5. التحقق من التثبيت
-1. *تشغيل ROS core*:
-   bash
-   roscore
-   
-   يجب أن تظهر رسالة تشير إلى أن ROS core يعمل بنجاح.
+9. Initialize rosdep:
+    bash
+    sudo rosdep init
+    rosdep update
+    
 
-   
-![image](https://github.com/user-attachments/assets/dc36cc6e-71f8-4b5f-bf89-34333aa0f4ac)
+10. Setup ROS Environment:
+    bash
+    echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+    source ~/.bashrc
+11. Install Dependencies for Building Packages:
+    bash
+    sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+    
+
