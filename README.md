@@ -1,6 +1,8 @@
 خطوات تثبيت ROS على نظام Ubuntu:
 
 1. إعداد VirtualBox وUbuntu
+   ![Install ROS noetic ](https://github.com/user-attachments/assets/6bfa77b7-aa35-46dc-9183-0cd09a5a0a22)
+
 1. تنزيل VirtualBox: من (https://www.virtualbox.org/).
 2. تنزيل Ubuntu ISO: من (https://ubuntu.com/download/desktop).
 
