@@ -47,3 +47,4 @@
    يجب أن تظهر رسالة تشير إلى أن ROS core يعمل بنجاح.
 
    
+![image](https://github.com/user-attachments/assets/dc36cc6e-71f8-4b5f-bf89-34333aa0f4ac)
