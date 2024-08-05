@@ -24,6 +24,8 @@ concise guide to install ROS on Ubuntu using VirtualBox:
 4. Install Ubuntu:
 - Start the VM and select the Ubuntu ISO as the startup disk.
 - Follow the installation prompts to install Ubuntu on the virtual machine.
+![11111](https://github.com/user-attachments/assets/c337e0bf-dd74-44c8-88f5-9fda654b32b3)
+
 
 5. Setup ROS Sources:
    bash
