@@ -30,34 +30,35 @@ concise guide to install ROS on Ubuntu using VirtualBox:
 5. Setup ROS Sources:
    bash
    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-    
+   
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'    
 
-6. Add ROS Keys:
+7. Add ROS Keys:
    bash
    sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
    
 
-7. Update Package Index:
+8. Update Package Index:
    bash
    sudo apt update
    
 
-8. Install ROS:
+9. Install ROS:
    bash
    sudo apt install ros-noetic-desktop-full
    
 
-9. Initialize rosdep:
+10. Initialize rosdep:
     bash
     sudo rosdep init
     rosdep update
     
 
-10. Setup ROS Environment:
+11. Setup ROS Environment:
     bash
     echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
     source ~/.bashrc
-11. Install Dependencies for Building Packages:
+12. Install Dependencies for Building Packages:
     bash
     sudo apt install python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
     
