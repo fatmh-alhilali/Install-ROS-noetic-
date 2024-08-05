@@ -7,9 +7,17 @@ concise guide to install ROS on Ubuntu using VirtualBox:
 
 3. Create a New Virtual Machine:
 - Open VirtualBox and click "New".
+  ![Oracle VM VirtualBox Manager ](https://github.com/user-attachments/assets/0db60ac6-9934-4aed-8a98-074a469d7c8c)
+
 - Name the VM, select "Linux" as the type and "Ubuntu (64-bit)" as the version.
-- Allocate memory (at least 2GB).
-- Create a virtual hard disk (at least 20GB).
+  ![Oracle VM VirtualBox Manager 01_02_46 06_57_21 م](https://github.com/user-attachments/assets/e3ea251e-ff98-41db-afb9-7d01fd052fd9)
+
+- Allocate memory (at least 4GB).
+  ![Oracle VM VirtualBox Manager 01_02_46 07_01_05 م](https://github.com/user-attachments/assets/b0f845b1-038e-4900-8368-aa25a9080e13)
+
+- Insert the Ubuntu ISO disk you downloaded.
+  ![f  Running  - Oracle VM VirtualBox ](https://github.com/user-attachments/assets/e3078d80-5508-47f3-8182-6a5dc2b74483)
+
 
 4. Install Ubuntu:
 - Start the VM and select the Ubuntu ISO as the startup disk.
