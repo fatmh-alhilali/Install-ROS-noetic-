@@ -1,5 +1,5 @@
-
-Here's a concise guide to install ROS on Ubuntu using VirtualBox:
+concise guide to install ROS on Ubuntu using VirtualBox:
+![Uploading Install ROS noetic .png…]()
 
 1. Install VirtualBox: [official website](https://www.virtualbox.org/).
 
