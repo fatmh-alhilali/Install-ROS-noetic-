@@ -61,4 +61,5 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 14. Install Dependencies for Building Packages:
     sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
     
+![01](https://github.com/user-attachments/assets/f3d76958-5de7-497f-949d-d6a530e86378)
 
