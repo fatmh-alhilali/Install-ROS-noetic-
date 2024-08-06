@@ -39,11 +39,12 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 
 
 9. Update Package Index:
+    
    sudo apt update
    
 
 10. Install ROS:
-   ![Uploading Install ROS noetic .png…]()
+ sudo apt install ros-noetic-desktop-full
    
 ![01](https://github.com/user-attachments/assets/5842800b-b348-402d-954f-feec3d317a13)
 
